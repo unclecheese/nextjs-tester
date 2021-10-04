@@ -1,0 +1,16 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneContactPage($link: String!, $stage: VersionedQueryMode) {
+  readOneContactPage(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+    
+	sendEmailTo
+	introText
+	address1
+	address2
+	phoneNumber
+	emailAddress
+
+
+  }
+}

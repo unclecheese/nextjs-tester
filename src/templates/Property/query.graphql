@@ -1,0 +1,32 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneProperty($link: String!, $stage: VersionedQueryMode) {
+  readOneProperty(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+    
+	price
+	description
+	features
+	thingsToDo
+	cancellationPolicy
+	bathrooms
+	bedrooms
+	available
+	primaryImageID
+	regionID
+	primaryImage { 
+ 		__typename ## add your fields below
+	}
+	region { 
+ 		__typename ## add your fields below
+	}
+	reviews { 
+ 		__typename ## add your fields below
+	}
+	images { 
+ 		__typename ## add your fields below
+	}
+
+
+  }
+}

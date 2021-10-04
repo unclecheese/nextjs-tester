@@ -1,0 +1,13 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneStaffPage($link: String!, $stage: VersionedQueryMode) {
+  readOneStaffPage(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+    
+	staff { 
+ 		__typename ## add your fields below
+	}
+
+
+  }
+}

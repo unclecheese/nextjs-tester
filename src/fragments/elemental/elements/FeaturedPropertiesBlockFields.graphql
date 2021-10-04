@@ -1,0 +1,40 @@
+fragment FeaturedPropertiesBlockFields on FeaturedPropertiesBlock {
+	subheadline
+	property1 { 
+ 		hashID,
+		link
+		title
+		bedrooms
+		bathrooms
+		available(format: NICE)
+		timestamp: available(format: TIMESTAMP)
+		primaryImage {
+			absoluteLink
+		}
+	}
+	property2 { 
+ 		hashID,
+		link
+		title
+		bedrooms
+		bathrooms
+		available(format: NICE)
+		timestamp: available(format: TIMESTAMP)
+		primaryImage {
+			absoluteLink
+		}
+	}
+	property3 { 
+ 		hashID,
+		link
+		title
+		bedrooms
+		bathrooms
+		available(format: NICE)
+		timestamp: available(format: TIMESTAMP)
+		primaryImage {
+			absoluteLink
+		}
+	}
+
+}

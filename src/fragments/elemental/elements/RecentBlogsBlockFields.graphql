@@ -1,0 +1,4 @@
+fragment RecentBlogsBlockFields on RecentBlogsBlock {
+	count
+
+}

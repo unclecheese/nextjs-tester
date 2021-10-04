@@ -1,0 +1,7 @@
+fragment IconFeatureBlockFields on IconFeatureBlock {
+	subheadline
+	features { 
+ 		__typename ## add your fields below
+	}
+
+}

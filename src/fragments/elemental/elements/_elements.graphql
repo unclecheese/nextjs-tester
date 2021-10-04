@@ -2,11 +2,26 @@
 
 #import "../../BaseFields.graphql"
 #import "./BaseElementFields.graphql"
+#import "./FeaturedPropertiesBlockFields.graphql"
+#import "./IconFeatureBlockFields.graphql"
+#import "./RecentBlogsBlockFields.graphql"
 #import "./ElementContentFields.graphql"
 
 fragment ElementsFields on BaseElementInterface {
 	...BaseFields
 	...BaseElementFields
+
+    ... on FeaturedPropertiesBlock {
+        ...FeaturedPropertiesBlockFields
+    }
+
+    ... on IconFeatureBlock {
+        ...IconFeatureBlockFields
+    }
+
+    ... on RecentBlogsBlock {
+        ...RecentBlogsBlockFields
+    }
 
     ... on ElementContent {
         ...ElementContentFields

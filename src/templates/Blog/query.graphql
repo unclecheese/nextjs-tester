@@ -1,0 +1,26 @@
+#import "../../fragments/BasePageFields.graphql"
+
+query ReadOneBlog($link: String!, $stage: VersionedQueryMode) {
+  readOneBlog(link: $link, versioning: { mode: $stage }) {
+    ...BasePageFields
+    
+	postsPerPage
+	tags { 
+ 		__typename ## add your fields below
+	}
+	categories { 
+ 		__typename ## add your fields below
+	}
+	editors { 
+ 		__typename ## add your fields below
+	}
+	writers { 
+ 		__typename ## add your fields below
+	}
+	contributors { 
+ 		__typename ## add your fields below
+	}
+
+
+  }
+}

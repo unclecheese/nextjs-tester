@@ -3,7 +3,7 @@ import { PageContext } from "lib"
 import { PageUnion } from "types"
 import Header from "components/Header"
 import Footer from "components/Footer"
-import { UIStateContext, Context as UIState } from "context/uiState"
+import { Context as UIState } from "context/uiState"
 
 import Head from "next/head"
 import createUIState from "state/createUIState"
