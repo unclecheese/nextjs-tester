@@ -1168,10 +1168,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@silverstripe/nextjs-builder@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-builder/-/nextjs-builder-0.2.9.tgz#ea3e0cbbe5d42baaff0933b75d37b84f9055c8da"
-  integrity sha512-FxJIEsLJ7oJ7ILOZK5X9XRtwmm6FSdld/XxmNKkGV9OXoxnkno/mIvdF8ATST9+bP8+46iimrZJu3YzEez9a3g==
+"@silverstripe/nextjs-builder@^0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-builder/-/nextjs-builder-0.2.10.tgz#3f129cf841609e555128485a2d3b7400a46fc0b6"
+  integrity sha512-Mq7fK/d8YLLurYvBUefDwzVVNqI61/wAE0vbWota0VgcE9/bVdgE0pz+mZURMAQ3ZU7ujYhepB2Qtb0MjZoAtg==
   dependencies:
     "@babel/parser" "^7.15.3"
     "@babel/traverse" "^7.15.4"
