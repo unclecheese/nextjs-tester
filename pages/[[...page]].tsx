@@ -21,7 +21,7 @@ export const getStaticProps = async (context: any) => {
     const f = glob.sync(`${getCacheDir()}/*.*`, { dot: true })
     const yo = fs.existsSync(getCacheDir()) ? `yeah` : `nah`
     const n = glob.sync(`${getCacheDir()}/../src/*.*`)
-    throw new Error(`Whoa there... ${JSON.stringify(f)} ${yo} ${JSON.stringify(n)}`)
+    throw new Error(`Whoa there... ${getCacheDir()} ${__dirname} ${JSON.stringify(f)} ${yo} ${JSON.stringify(n)}`)
   }
   const r = await d(context)
 
