@@ -4,27 +4,14 @@ import { createPage } from "@silverstripe/nextjs-toolkit"
 import {
   getStaticProps as createGetStaticProps,
   getStaticPaths as createGetStaticPaths,
-  getCacheDir,
 } from "@silverstripe/nextjs-builder"
-import fs from "fs"
-import path from "path"
-// @ts-ignore
-import glob from "glob"
+
 const project = {
   projectConfig,
   cacheManifest,
 }
 
-const d = createGetStaticProps(project)
-export const getStaticProps = async (context: any) => {
-
-  if (!fs.existsSync(`${getCacheDir()}/.availableTemplates.json`)) {    
-    throw new Error(`Whoa there... ${JSON.stringify(process.env)}`)
-  }
-  const r = await d(context)
-
-  return r
-}
+export const getStaticProps = createGetStaticProps(project)
 export const getStaticPaths = createGetStaticPaths(project)
 
 const Page = createPage(project)

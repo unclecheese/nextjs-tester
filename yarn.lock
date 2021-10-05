@@ -1168,10 +1168,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@silverstripe/nextjs-builder@^0.2.11":
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-builder/-/nextjs-builder-0.2.11.tgz#ff300892b9d63d712f779929ece8a3e546f209b9"
-  integrity sha512-8rj23HiTtQoxL08bvKSQG1os5FUICLnCuPHlHyWtGlsG2R8kGubePWs0aKfFy7NVi9+erBUQ2rSSUp0RwtBBoQ==
+"@silverstripe/nextjs-builder@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-builder/-/nextjs-builder-0.2.12.tgz#f61063aac0c995edc75ead709ee3579c5efcf073"
+  integrity sha512-2Xdbz+tu3KYgOre+4MvdxeSvcKTz5MyN8nv6+lMkVcXrRB6WNx6JAy4upXvbFe+MI710gvkIwCDfAPQ+m93TZw==
   dependencies:
     "@babel/parser" "^7.15.3"
     "@babel/traverse" "^7.15.4"
@@ -1188,10 +1188,10 @@
     react-dom "^17.0.2"
     slash "^4.0.0"
 
-"@silverstripe/nextjs-toolkit@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-toolkit/-/nextjs-toolkit-0.1.5.tgz#4fd12b7797b15640276b8bfdd54ec9b07ce5895f"
-  integrity sha512-/y0qdV56JlTPzuc+ih+OcczgZhhjCxBRS49ybEKbxC8677qPsRfL11IDfpK6/yNfG/HgKb4wlf+U6VqqpxiHIA==
+"@silverstripe/nextjs-toolkit@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@silverstripe/nextjs-toolkit/-/nextjs-toolkit-0.1.6.tgz#94544f780fd86e4640ad78cb0f026434e1131056"
+  integrity sha512-DQ5rxOAlpFSEDHwu+FpS56yyYBc9Q/VLJhKQu4g+0Q5RHXuPJWD+jM7AyDsHMPV04gnXLuQ6Ym9ZFuVpm4bBAQ==
   dependencies:
     "@babel/parser" "^7.15.3"
     "@babel/traverse" "^7.15.4"
