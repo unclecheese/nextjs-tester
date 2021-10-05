@@ -18,8 +18,7 @@ const project = {
 const d = createGetStaticProps(project)
 export const getStaticProps = async (context: any) => {
 
-  if (true) {
-  //if (!fs.existsSync(`${getCacheDir()}/.availableTemplates.json`)) {
+  if (!fs.existsSync(`${getCacheDir()}/.availableTemplates.json`)) {
     let d = __dirname
     const f = []
     while (d !== '/') {
