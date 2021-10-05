@@ -36,7 +36,7 @@ yarn-error.log*
 .vercel
 
 .cache/
-
+.ss-cache/
 .idea/
 .vscode/
 ss-schema.ts
