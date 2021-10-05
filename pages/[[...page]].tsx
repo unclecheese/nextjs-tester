@@ -7,6 +7,7 @@ import {
   getCacheDir,
 } from "@silverstripe/nextjs-builder"
 import fs from "fs"
+import path from "path"
 // @ts-ignore
 import glob from "glob"
 const project = {
@@ -17,11 +18,15 @@ const project = {
 const d = createGetStaticProps(project)
 export const getStaticProps = async (context: any) => {
 
-  if (!fs.existsSync(`${getCacheDir()}/.availableTemplates.json`)) {
-    const f = glob.sync(`${getCacheDir()}/*.*`, { dot: true })
-    const yo = fs.existsSync(getCacheDir()) ? `yeah` : `nah`
-    const n = glob.sync(`${getCacheDir()}/../src/*.*`)
-    throw new Error(`Whoa there... ${getCacheDir()} ${__dirname} ${JSON.stringify(f)} ${yo} ${JSON.stringify(n)}`)
+  if (true) {
+  //if (!fs.existsSync(`${getCacheDir()}/.availableTemplates.json`)) {
+    let d = __dirname
+    const f = []
+    while (d !== '/') {
+      f.push(glob.sync(`${d}/*.*`), { absolute: true })
+      d = path.dirname(d)
+    }
+    throw new Error(`Whoa there... ${path.resolve('../.ss-cache')}, ${JSON.stringify(f)}`)
   }
   const r = await d(context)
 
